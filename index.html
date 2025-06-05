@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Recordings</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #ffffff;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffcb6b;
+    }
+
+    table {
+      width: 90%;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      background-color: #2b2b3d;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #3a3a50;
+      color: #ffcb6b;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #555;
+    }
+
+    tr:hover {
+      background-color: #444460;
+    }
+
+    td a {
+      color: #80cbc4;
+      text-decoration: none;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    .status {
+      font-size: 0.9rem;
+      padding: 0.25em 0.5em;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .ok { background-color: #4caf50; color: white; }
+    .fail { background-color: #f44336; color: white; }
+    .pending { background-color: #ff9800; color: white; }
+  </style>
+</head>
+<body>
+
+  <h1>Recordings</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Path</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Episode 1</td>
+        <td><a href="file:///C:/Recordings/OK/1.mp4">C:/Recordings/OK/1.mp4</a></td>
+        <td><span class="status ok">OK</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Episode 2</td>
+        <td><a href="file:///C:/Recordings/OK/2.mp4">C:/Recordings/OK/2.mp4</a></td>
+        <td><span class="status ok">OK</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Episode 3</td>
+        <td><a href="file:///C:/Recordings/Pending/3.mp4">C:/Recordings/Pending/3.mp4</a></td>
+        <td><span class="status pending">Pending</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
